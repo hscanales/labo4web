@@ -1,0 +1,112 @@
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #7f888f;
+}
+h2{
+    font-family: sans-serif;
+    color: black;
+}
+
+hr{
+    color: #f56a6a;
+
+}
+i{
+    color: #f56a6a;
+    font-size: 3em;
+}
+.item2 input{
+    border-radius: 1em;
+	padding: 1em 2em;
+	text-align: center;
+	text-decoration:none;
+	display: inline-block;
+	font-size: 0.75em;
+    border: none;
+    background-color: white;
+    border: 0.2em solid #f56a6a;
+    color: #f56a6a;
+	
+}
+
+.item2 input:hover{
+    color: #5CACE2; 
+    border: 0.2em solid #5CACE2;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header icons'
+    'art1 art1 art1 art1 img img img img'
+    'erat erat erat blank blank blank blank blank'
+    'icon2 art2 art2 art2 icon3 art3 art3 art3'
+    'icon4 art4 art4 art4 icon5 art5 art5 art5'
+    ;
+    grid-gap: 0.3125em;
+
+    padding: 6em;
+}
+
+.item1 {
+    grid-area: header;
+
+}
+
+.item1 span{
+    font-weight: bold;
+    color: black;
+}
+
+.item2 {
+    grid-area: art1;
+}
+
+.item3 {
+    grid-area: img;
+}
+
+.item4{
+    grid-area: erat;
+}
+
+.item5{
+    grid-area: icon2;
+}
+
+.item6{
+    grid-area: art2;
+}
+
+.item7{
+    grid-area: icon3;
+}
+
+.item8{
+    grid-area: art3;
+
+}
+
+.item9{
+    grid-area: icon4;
+}
+.item10{
+    grid-area: art4;
+}
+
+.item11{
+    grid-area: icon5;
+}
+.item12{
+    grid-area: art5;
+}
+.icon {
+    grid-area: icons;
+    font-size: 2em;
+
+}
+
+.blank {
+    grid-area: blank;
+}
+
