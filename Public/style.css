@@ -5,12 +5,27 @@ p{
 h2{
     font-family: sans-serif;
     color: black;
+
+}
+.main{
+    display: block;
+    width: 100%;
+    max-width: 2000px;
+    margin-top: 0;
+    margin: 0 auto; /*Center the container*/
+    height: 100vh;
+    padding-left: 3em auto;
 }
 
 hr{
-    color: #f56a6a;
-
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 0.5em solid #f56a6a;
+    margin: 0 0;
+    padding: 0 auto;
 }
+
 i{
     color: #f56a6a;
     font-size: 3em;
@@ -37,7 +52,6 @@ i{
 .grid-container {
     display: grid;
     grid-template-areas:
-    'header header header header header header header icons'
     'art1 art1 art1 art1 img img img img'
     'erat erat erat blank blank blank blank blank'
     'icon2 art2 art2 art2 icon3 art3 art3 art3'
@@ -48,15 +62,26 @@ i{
     padding: 6em;
 }
 
-.item1 {
-    grid-area: header;
-
+.flex-container {
+    padding-left: 1.2em auto;
 }
 
-.item1 span{
+.flex-container .header{
+
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container span{
     font-weight: bold;
     color: black;
 }
+
+.flex-container  i{
+    color: black;
+    font-size: 1em;
+}
+
+
 
 .item2 {
     grid-area: art1;
@@ -110,3 +135,7 @@ i{
     grid-area: blank;
 }
 
+.main {
+    display: flex;
+    flex-direction: column; 
+}
